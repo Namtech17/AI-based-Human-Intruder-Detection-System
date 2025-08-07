@@ -1,6 +1,6 @@
 # 🛡️ Human Intrusion Detection System 🔍
 
-A real-time security system that uses **YOLOv8**, **Flask**, **OpenCV**, and **Socket.IO** to detect humans via webcam, raise alerts, send email snapshots, and allow access via QR code on your mobile phone.
+A real-time security system that uses **YOLOv8**, **Flask**, **OpenCV**, and **Socket.IO** to detect humans via webcam, raise alerts, send email snapshots.
 
 ---
 
@@ -9,10 +9,6 @@ A real-time security system that uses **YOLOv8**, **Flask**, **OpenCV**, and **S
 ### 🔴 Real-Time Detection
 ![Live Detection Example](snapshot/snapshot_2024-11-30_15_52_13.jpg)
 
-### 📱 QR Code Access from Phone
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Qr-1.png" alt="QR Code Demo" width="200" />
-
----
 
 ## ⚙️ Features
 
@@ -21,7 +17,6 @@ A real-time security system that uses **YOLOv8**, **Flask**, **OpenCV**, and **S
 - 🖼️ Snapshot saving when detection happens
 - 📧 Email alerts with detection time and image
 - 🔊 Sound alert using `pygame`
-- 📱 Access via QR Code on your mobile (same Wi-Fi)
 
 ---
 
@@ -83,8 +78,8 @@ pip install flask flask_socketio ultralytics opencv-python pygame qrcode python-
 python app.py
 ```
 
-- The terminal will show your **local IP** and display a **QR code**.
-- Open `http://127.0.0.1:5000` or scan the QR code on your mobile (must be on same Wi-Fi).
+- The terminal will show your **local IP** 
+- Open `http://127.0.0.1:5000` 
 - Watch live feed — alerts trigger on human detection.
 
 ---
